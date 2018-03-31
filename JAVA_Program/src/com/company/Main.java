@@ -44,5 +44,26 @@ public class Main {
         System.out.println(A.equals(C));
         System.out.println("HaHaHa".equals(A));
 
+        //判断是否为空串
+        String str = "";
+        if (str.length() == 0)
+            System.out.println("是空串");
+        else
+            System.out.println(str);
+
+        str = "LHospital";
+        if (str.equals(""))
+            System.out.println("是空串");
+        else
+            System.out.println(str);
+
+        //添加字符串
+        StringBuilder builder = new StringBuilder();
+        builder.append('F');
+        builder.append("uck!");
+
+        String completedString = builder.toString();
+
+        System.out.println(completedString);
     }
 }
